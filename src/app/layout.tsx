@@ -2,7 +2,7 @@ import React from "react";
 import type { Metadata } from "next";
 import { Sen } from "next/font/google";
 
-import "./globals.css";
+import "@/styles/globals.scss";
 
 const sen = Sen({ subsets: ["latin"], weight: ["400", "500", "700"] });
 
