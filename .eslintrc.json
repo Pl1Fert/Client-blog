@@ -78,6 +78,9 @@
         "react/jsx-props-no-spreading": "off",
         "react/require-default-props": "off",
         "jsx-a11y/label-has-associated-control": "off",
-        "react-hooks/exhaustive-deps": "off"
+        "react-hooks/exhaustive-deps": "off",
+        "import/no-cycle": "off",
+        "react/button-has-type": "off",
+        "import/no-extraneous-dependencies": "off"
     }
 }

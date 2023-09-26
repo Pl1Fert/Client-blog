@@ -1,6 +1,7 @@
-import React from "react";
 import type { Metadata } from "next";
 import { Sen } from "next/font/google";
+
+import { Footer, Header } from "@/components";
 
 import "@/styles/globals.scss";
 
@@ -13,7 +14,12 @@ export const metadata: Metadata = {
 
 const RootLayout = ({ children }: { children: React.ReactNode }) => (
     <html lang="en">
-        <body className={sen.className}>{children}</body>
+        <body className={sen.className}>
+            <Header />
+            <main>{children}</main>
+            <Footer />
+            <div id="modal-root" />
+        </body>
     </html>
 );
 

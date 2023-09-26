@@ -1,0 +1,32 @@
+@import "@/styles/colors";
+
+.link {
+    margin-right: 25px;
+
+    font-size: 18px;
+
+    transition: all 0.3s linear;
+
+    &::after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 2px;
+
+        background: $white;
+        transition: all 0.3s linear;
+    }
+
+    &:hover::after {
+        width: 100%;
+    }
+
+    &Active {
+        cursor: default;
+        pointer-events: none;
+
+        &::after {
+            width: 100%;
+        }
+    }
+}

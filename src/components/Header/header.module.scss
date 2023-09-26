@@ -1,0 +1,20 @@
+@import "@/styles/colors";
+
+.header {
+    height: 80px;
+    padding: 0 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: $dark-blue;
+    color: $white;
+}
+
+.homeLink {
+    font-weight: 700;
+    font-size: 24px;
+
+    cursor: pointer;
+}
