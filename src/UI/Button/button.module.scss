@@ -1,0 +1,31 @@
+@import "@/styles/colors";
+
+.button {
+    padding: 16px 48px;
+    border: none;
+
+    font: inherit;
+    font-size: 18px;
+    font-weight: 700;
+
+    outline: none;
+    color: $dark-blue;
+
+    cursor: pointer;
+
+    &Yellow {
+        background-color: $yellow;
+
+        &:hover {
+            background-color: $yellow-hover;
+        }
+    }
+
+    &White {
+        background-color: $white;
+
+        &:hover {
+            background-color: $very-light-purple;
+        }
+    }
+}
