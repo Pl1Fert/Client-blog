@@ -1,24 +1,24 @@
 import darkFacebook from "@/assets/icons/socials/dark/Facebook.svg";
 import darkInstagram from "@/assets/icons/socials/dark/Instagram.svg";
-import darkLinkedln from "@/assets/icons/socials/dark/Linkedln.svg";
+import darkLinkedIn from "@/assets/icons/socials/dark/LinkedIn.svg";
 import darkTwitter from "@/assets/icons/socials/dark/Twitter.svg";
 import lightFacebook from "@/assets/icons/socials/light/Facebook.svg";
 import lightInstagram from "@/assets/icons/socials/light/Instagram.svg";
-import lightLinkedln from "@/assets/icons/socials/light/Linkedln.svg";
+import lightLinkedIn from "@/assets/icons/socials/light/LinkedIn.svg";
 import lightTwitter from "@/assets/icons/socials/light/Twitter.svg";
 
 enum SocialsName {
     FACEBOOK = "Facebook",
     TWITTER = "Twitter",
     INSTAGRAM = "Instagram",
-    LINKEDLN = "Linkedln",
+    LINKEDIN = "LinkedIn",
 }
 
 enum BlogSocialPages {
     FACEBOOK = "https://www.facebook.com/",
     TWITTER = "https://twitter.com",
     INSTAGRAM = "https://www.instagram.com/",
-    LINKEDLN = "https://www.linkedin.com/",
+    LINKEDIN = "https://www.linkedin.com/",
 }
 
 export const SOCIALS_ICONS = [
@@ -42,9 +42,9 @@ export const SOCIALS_ICONS = [
     },
     {
         id: 4,
-        darkIcon: darkLinkedln as string,
-        lightIcon: lightLinkedln as string,
-        alt: SocialsName.LINKEDLN,
+        darkIcon: darkLinkedIn as string,
+        lightIcon: lightLinkedIn as string,
+        alt: SocialsName.LINKEDIN,
     },
 ];
 
@@ -66,7 +66,7 @@ export const BLOG_SOCIAL_LINKS = [
     },
     {
         id: 4,
-        icon: SOCIALS_ICONS.find((x) => x.alt === SocialsName.LINKEDLN),
-        href: BlogSocialPages.LINKEDLN,
+        icon: SOCIALS_ICONS.find((x) => x.alt === SocialsName.LINKEDIN),
+        href: BlogSocialPages.LINKEDIN,
     },
 ];
