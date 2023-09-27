@@ -18,7 +18,6 @@ const RootLayout = ({ children }: { children: React.ReactNode }) => (
             <Header />
             <main>{children}</main>
             <Footer />
-            <div id="modal-root" />
         </body>
     </html>
 );

@@ -1,4 +1,4 @@
 export enum ButtonBackgroundColor {
-    yellow = "yellow",
-    white = "white",
+    YELLOW = "yellow",
+    WHITE = "white",
 }

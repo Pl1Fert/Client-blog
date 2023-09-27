@@ -12,7 +12,7 @@ const meta: Meta<typeof Button> = {
             control: "text",
         },
         backgroundColor: {
-            options: [ButtonBackgroundColor.yellow, ButtonBackgroundColor.white],
+            options: [ButtonBackgroundColor.YELLOW, ButtonBackgroundColor.WHITE],
             control: { type: "radio" },
         },
     },
@@ -24,6 +24,6 @@ type Story = StoryObj<typeof Button>;
 export const Default: Story = {
     args: {
         label: "Button",
-        backgroundColor: ButtonBackgroundColor.yellow,
+        backgroundColor: ButtonBackgroundColor.YELLOW,
     },
 };

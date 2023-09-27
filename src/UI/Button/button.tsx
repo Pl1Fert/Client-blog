@@ -18,8 +18,8 @@ export const Button: FC<ButtonProps> = (props) => {
             {...restProps}
             className={clsx({
                 [styles.button]: true,
-                [styles.buttonYellow]: backgroundColor === ButtonBackgroundColor.yellow,
-                [styles.buttonWhite]: backgroundColor === ButtonBackgroundColor.white,
+                [styles.buttonYellow]: backgroundColor === ButtonBackgroundColor.YELLOW,
+                [styles.buttonWhite]: backgroundColor === ButtonBackgroundColor.WHITE,
             })}>
             {label}
         </button>

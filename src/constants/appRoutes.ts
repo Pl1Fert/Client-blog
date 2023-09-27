@@ -5,6 +5,6 @@ export enum AppRoutes {
     CATEGORIES = "/categories",
     CONTACT = "/contact",
     POSTS = "/posts",
-    PRIVACYPOLICY = "/privacyPolicy",
+    PRIVACY_POLICY = "/privacyPolicy",
     ID = "/:id",
 }

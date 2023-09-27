@@ -1,6 +1,58 @@
 @import "@/styles/colors";
 
 .footer {
+    padding: 55px 0;
+
     background-color: $dark-blue;
     color: $white;
+
+    &Content {
+        position: relative;
+
+        margin: 55px 0;
+        padding: 80px 65px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        h2 {
+            width: 60%;
+        }
+    }
+}
+
+.background {
+    position: absolute;
+    inset: 0;
+    background-color: $white;
+    opacity: 0.05;
+
+    z-index: 1;
+}
+
+.title {
+    z-index: 2;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text {
+    font-size: 16px;
+
+    color: $light-grey;
+}
+
+.socials {
+    a {
+        margin-right: 25px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
 }

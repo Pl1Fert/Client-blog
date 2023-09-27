@@ -1,6 +1,6 @@
 import { AppRoutes } from "@/constants";
 
-export const NAV_LINKS = [
+export const LINKS = [
     {
         id: 1,
         href: AppRoutes.HOME,
@@ -20,5 +20,10 @@ export const NAV_LINKS = [
         id: 4,
         href: AppRoutes.CONTACT,
         title: "Contact Us",
+    },
+    {
+        id: 5,
+        href: AppRoutes.PRIVACY_POLICY,
+        title: "Privacy Policy",
     },
 ];
