@@ -1,2 +1,2 @@
 export * from "./appRoutes";
-export * from "./navLinks";
+export * from "./buttonConfig";

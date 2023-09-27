@@ -12,6 +12,7 @@
     color: $dark-blue;
 
     cursor: pointer;
+    transition: all 0.3s linear;
 
     &Yellow {
         background-color: $yellow;

@@ -1,0 +1,28 @@
+@import "@/styles/colors";
+
+.input {
+    width: 100%;
+    padding: 15px 0;
+    padding-left: 20px;
+
+    font: inherit;
+    font-size: 18px;
+
+    outline: none;
+
+    &::placeholder {
+        font: inherit;
+        font-size: 18px;
+    }
+
+    &Dark {
+        border: 1px solid $dark-grey;
+
+        color: $white;
+        background-color: transparent;
+
+        &::placeholder {
+            color: $light-grey;
+        }
+    }
+}

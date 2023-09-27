@@ -3,12 +3,14 @@
 import { FC } from "react";
 import clsx from "clsx";
 
+import { ButtonBackgroundColor } from "@/constants";
+
 import { ButtonProps } from "./button.interfaces";
 
 import styles from "./button.module.scss";
 
-export const Button: FC<ButtonProps> = (props: ButtonProps) => {
-    const { children, type, backgroundColor, ...restProps } = props;
+export const Button: FC<ButtonProps> = (props) => {
+    const { label, type, backgroundColor, ...restProps } = props;
 
     return (
         <button
@@ -16,10 +18,10 @@ export const Button: FC<ButtonProps> = (props: ButtonProps) => {
             {...restProps}
             className={clsx({
                 [styles.button]: true,
-                [styles.buttonYellow]: backgroundColor === "yellow",
-                [styles.buttonWhite]: backgroundColor === "white",
+                [styles.buttonYellow]: backgroundColor === ButtonBackgroundColor.yellow,
+                [styles.buttonWhite]: backgroundColor === ButtonBackgroundColor.white,
             })}>
-            {children}
+            {label}
         </button>
     );
 };
