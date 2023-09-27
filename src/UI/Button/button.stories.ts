@@ -8,7 +8,7 @@ const meta: Meta<typeof Button> = {
     component: Button,
     tags: ["autodocs"],
     argTypes: {
-        label: {
+        children: {
             control: "text",
         },
         backgroundColor: {
@@ -23,7 +23,7 @@ type Story = StoryObj<typeof Button>;
 
 export const Default: Story = {
     args: {
-        label: "Button",
+        children: "Button",
         backgroundColor: ButtonBackgroundColor.YELLOW,
     },
 };

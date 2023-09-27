@@ -4,5 +4,4 @@ import { ButtonBackgroundColor } from "@/constants";
 
 export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
     backgroundColor?: ButtonBackgroundColor;
-    label: string;
 }

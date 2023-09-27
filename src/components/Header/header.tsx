@@ -9,6 +9,6 @@ import styles from "./header.module.scss";
 export const Header: FC = () => (
     <header className={styles.header}>
         <NavBar />
-        <Button label="Video About Us" backgroundColor={ButtonBackgroundColor.WHITE} />
+        <Button backgroundColor={ButtonBackgroundColor.WHITE}>Video About Us</Button>
     </header>
 );

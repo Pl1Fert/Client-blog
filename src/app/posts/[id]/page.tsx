@@ -1,5 +1,12 @@
-import React, { FC } from "react";
+import { FC } from "react";
 
-const Post: FC = () => <main>Post</main>;
+import { JoinUs } from "@/components";
+
+const Post: FC = () => (
+    <>
+        Post
+        <JoinUs />
+    </>
+);
 
 export default Post;

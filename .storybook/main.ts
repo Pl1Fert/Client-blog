@@ -21,6 +21,7 @@ const config: StorybookConfig = {
             ...config.resolve.alias,
             "@/UI": path.resolve(__dirname, "../src/UI"),
             "@/styles": path.resolve(__dirname, "../src/styles"),
+            "@/constants": path.resolve(__dirname, "../src/constants"),
         };
 
         return config;

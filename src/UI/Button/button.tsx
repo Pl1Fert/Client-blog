@@ -10,7 +10,7 @@ import { ButtonProps } from "./button.interfaces";
 import styles from "./button.module.scss";
 
 export const Button: FC<ButtonProps> = (props) => {
-    const { label, type, backgroundColor, ...restProps } = props;
+    const { children, type, backgroundColor, ...restProps } = props;
 
     return (
         <button
@@ -21,7 +21,7 @@ export const Button: FC<ButtonProps> = (props) => {
                 [styles.buttonYellow]: backgroundColor === ButtonBackgroundColor.YELLOW,
                 [styles.buttonWhite]: backgroundColor === ButtonBackgroundColor.WHITE,
             })}>
-            {label}
+            {children}
         </button>
     );
 };

@@ -1,5 +1,12 @@
-import React, { FC } from "react";
+import { FC } from "react";
 
-const About: FC = () => <main>About</main>;
+import { JoinUs } from "@/components";
+
+const About: FC = () => (
+    <>
+        About
+        <JoinUs />
+    </>
+);
 
 export default About;
