@@ -1,10 +1,11 @@
 import { FC } from "react";
 
-import { JoinUs } from "@/components";
+import { AuthorRow, JoinUs } from "@/components";
 
 const About: FC = () => (
     <>
         About
+        <AuthorRow full />
         <JoinUs />
     </>
 );
