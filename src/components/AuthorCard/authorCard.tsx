@@ -21,7 +21,7 @@ export const AuthorCard: FC<AuthorCardProps> = ({ author: { id, name, role, soci
     return (
         <div className={styles.card} onClick={clickHandler}>
             <div className={styles.imageWrapper}>
-                <Image src={img} alt={name} />
+                <Image src={img} alt={name} loading="lazy" />
             </div>
             <h3 className={styles.name}>{name}</h3>
             <p className={styles.role}>{role}</p>

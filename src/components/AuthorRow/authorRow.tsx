@@ -2,7 +2,6 @@ import { FC } from "react";
 
 import { AuthorCard } from "@/components";
 import { AUTHORS } from "@/constants";
-import { Container } from "@/hocs";
 
 import { AuthorRowProps } from "./authorRow.interfaces";
 
@@ -17,10 +16,8 @@ export const AuthorRow: FC<AuthorRowProps> = ({ full }) => {
 
     return (
         <section className={styles.section}>
-            <Container>
-                <h2 className={styles.title}>List of Authors</h2>
-                <div className={styles.row}>{renderList()}</div>
-            </Container>
+            <h2 className={styles.title}>List of Authors</h2>
+            <div className={styles.row}>{renderList()}</div>
         </section>
     );
 };
