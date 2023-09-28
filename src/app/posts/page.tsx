@@ -1,12 +1,12 @@
 import { FC } from "react";
 
 import { JoinUs } from "@/components";
+import { Container } from "@/hocs";
 
 const Posts: FC = () => (
-    <>
-        Posts
+    <Container>
         <JoinUs />
-    </>
+    </Container>
 );
 
 export default Posts;

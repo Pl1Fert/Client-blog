@@ -14,12 +14,12 @@ enum SocialsName {
     LINKEDIN = "LinkedIn",
 }
 
-enum BlogSocialPages {
-    FACEBOOK = "https://www.facebook.com/",
-    TWITTER = "https://twitter.com",
-    INSTAGRAM = "https://www.instagram.com/",
-    LINKEDIN = "https://www.linkedin.com/",
-}
+const BlogSocialPages = {
+    FACEBOOK: "https://www.facebook.com/",
+    TWITTER: "https://twitter.com",
+    INSTAGRAM: "https://www.instagram.com/",
+    LINKEDIN: "https://www.linkedin.com/",
+};
 
 export const SOCIALS_ICONS = [
     {
@@ -51,22 +51,26 @@ export const SOCIALS_ICONS = [
 export const BLOG_SOCIAL_LINKS = [
     {
         id: 1,
-        icon: SOCIALS_ICONS.find((x) => x.alt === SocialsName.FACEBOOK),
+        // icon: SOCIALS_ICONS.find((x) => x.alt === SocialsName.FACEBOOK),
+        icon: SOCIALS_ICONS[0],
         href: BlogSocialPages.FACEBOOK,
     },
     {
         id: 2,
-        icon: SOCIALS_ICONS.find((x) => x.alt === SocialsName.TWITTER),
+        // icon: SOCIALS_ICONS.find((x) => x.alt === SocialsName.FACEBOOK),
+        icon: SOCIALS_ICONS[1],
         href: BlogSocialPages.TWITTER,
     },
     {
         id: 3,
-        icon: SOCIALS_ICONS.find((x) => x.alt === SocialsName.INSTAGRAM),
+        // icon: SOCIALS_ICONS.find((x) => x.alt === SocialsName.FACEBOOK),
+        icon: SOCIALS_ICONS[2],
         href: BlogSocialPages.INSTAGRAM,
     },
     {
         id: 4,
-        icon: SOCIALS_ICONS.find((x) => x.alt === SocialsName.LINKEDIN),
+        // icon: SOCIALS_ICONS.find((x) => x.alt === SocialsName.FACEBOOK),
+        icon: SOCIALS_ICONS[3],
         href: BlogSocialPages.LINKEDIN,
     },
 ];

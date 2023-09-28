@@ -1,3 +1,5 @@
+export * from "./AuthorCard";
+export * from "./AuthorRow";
 export * from "./Footer";
 export * from "./Header";
 export * from "./JoinUs";

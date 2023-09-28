@@ -1,12 +1,13 @@
 import { FC } from "react";
 
-import { JoinUs } from "@/components";
+import { AuthorRow, JoinUs } from "@/components";
+import { Container } from "@/hocs";
 
 const Home: FC = () => (
-    <>
-        home
+    <Container>
+        <AuthorRow />
         <JoinUs />
-    </>
+    </Container>
 );
 
 export default Home;

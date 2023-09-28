@@ -1,0 +1,181 @@
+@import "@/styles/colors";
+
+.top {
+    padding-top: 144px;
+    padding-right: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    &Headers {
+        max-width: 496px;
+        margin-right: 96px;
+    }
+
+    &SupTitle {
+        font-weight: 500;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+
+    &Text {
+        max-width: 477px;
+    }
+}
+
+.stats {
+    position: relative;
+
+    &Row {
+        position: absolute;
+        bottom: 20px;
+        left: 10%;
+
+        padding: 32px 48px;
+        width: 630px;
+        height: 156px;
+
+        display: flex;
+        align-items: center;
+
+        background-color: $yellow;
+    }
+
+    &Block {
+        max-width: 516px;
+        margin-right: 65px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &Title {
+        font-size: 56px;
+    }
+}
+
+.whiteBlock {
+    position: absolute;
+    top: 0;
+    left: 10%;
+
+    width: 624px;
+    height: 60px;
+
+    background-color: $white;
+}
+
+.purpleBlock {
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+
+    width: 312px;
+    height: 20px;
+
+    background-color: $purple;
+}
+
+.yellowBlock {
+    position: absolute;
+    bottom: 0;
+    left: calc(10% + 312px);
+
+    width: 550px;
+    height: 20px;
+
+    background-color: $yellow;
+}
+
+.misionVision {
+    padding: 128px 108px 64px;
+    margin-bottom: 64px;
+
+    background-color: $very-light-purple;
+
+    &Row {
+        display: flex;
+        align-items: center;
+    }
+
+    &Block {
+        max-width: 516px;
+        margin-right: 30px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &SupTitle {
+        margin-bottom: 24px;
+
+        font-weight: 500;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+
+    &Title {
+        margin-bottom: 16px;
+    }
+
+    &Text {
+        color: $dark-grey;
+    }
+}
+
+.description {
+    &Row {
+        padding: 64px 0;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        text-align: left;
+
+        color: $dark-blue;
+    }
+
+    &Content {
+        max-width: 520px;
+    }
+
+    &Title {
+        margin-bottom: 15px;
+    }
+
+    &SubTitle {
+        margin-bottom: 15px;
+    }
+
+    &Image {
+        position: relative;
+    }
+}
+
+.figure_1 {
+    position: absolute;
+    top: 15%;
+    left: -5%;
+
+    width: 103px;
+    height: 116px;
+
+    border-top-left-radius: 50%;
+    background-color: $yellow;
+}
+
+.figure_2 {
+    position: absolute;
+    bottom: -5%;
+    left: 10%;
+
+    width: 74px;
+    height: 74px;
+
+    border-radius: 50%;
+    background-color: $purple;
+}

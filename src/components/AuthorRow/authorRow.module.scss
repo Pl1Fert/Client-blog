@@ -1,0 +1,15 @@
+.section {
+    padding: 64px 0;
+}
+
+.title {
+    margin-bottom: 48px;
+
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+}
