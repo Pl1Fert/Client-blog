@@ -1,7 +1,7 @@
 "use client";
 
 import { FC } from "react";
-import { Map, Marker } from "react-map-gl";
+import { Map, Marker, NavigationControl } from "react-map-gl";
 
 import { CITIES_COORDINATES, ENV_VARS } from "@/constants";
 
@@ -18,8 +18,9 @@ export const MapComponent: FC = () => {
                 maxZoom={20}
                 minZoom={3}>
                 {CITIES_COORDINATES.map(({ id, lat, lng }) => (
-                    <Marker key={id} latitude={lat} longitude={lng} />
+                    <Marker key={id} latitude={lat} longitude={lng} anchor="bottom" />
                 ))}
+                <NavigationControl position="top-left" />
             </Map>
         </div>
     );

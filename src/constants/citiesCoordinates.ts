@@ -1,9 +1,9 @@
 export const CITIES_COORDINATES = [
     {
         id: 1,
-        lng: 151.21,
-        lat: -33.8678,
-        name: "Sydney",
+        lng: 2.2,
+        lat: 48.5,
+        name: "Paris",
     },
     {
         id: 2,
