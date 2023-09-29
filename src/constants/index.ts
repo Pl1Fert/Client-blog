@@ -5,3 +5,5 @@ export * from "./authors";
 export * from "./buttonConfig";
 export * from "./links";
 export * from "./privacyPolicy";
+export * from "./envVariables";
+export * from "./citiesCoordinates";
