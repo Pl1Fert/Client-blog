@@ -1,9 +1,7 @@
 import { FC } from "react";
 
-import { MapComponent } from "@/components";
-import { ButtonBackgroundColor } from "@/constants";
+import { ContactForm, MapComponent } from "@/components";
 import { Container } from "@/hocs";
-import { Button, Input } from "@/UI";
 
 import styles from "./page.module.scss";
 
@@ -41,13 +39,7 @@ const Contact: FC = () => (
                     </div>
                 </div>
             </section>
-            <form className={styles.form}>
-                <Input name="name" placeholder="Full Name" />
-                <Input name="email" placeholder="Your Email" />
-                <select name="query" placeholder="Query Related" />
-                <textarea name="message" placeholder="Message" />
-                <Button backgroundColor={ButtonBackgroundColor.YELLOW}>Send Message</Button>
-            </form>
+            <ContactForm />
         </Container>
         <MapComponent />
     </>
