@@ -1,7 +1,8 @@
 @import "@/styles/colors";
 
-.input {
+.textArea {
     width: 100%;
+    height: 144px;
     padding: 15px 0;
     padding-left: 20px;
 
@@ -9,6 +10,7 @@
     font-size: 18px;
 
     outline: none;
+    resize: none;
 
     &::placeholder {
         font: inherit;

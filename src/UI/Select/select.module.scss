@@ -1,14 +1,18 @@
 @import "@/styles/colors";
 
-.input {
+.select {
     width: 100%;
-    padding: 15px 0;
-    padding-left: 20px;
+    padding: 15px 20px;
 
     font: inherit;
     font-size: 18px;
 
     outline: none;
+    resize: none;
+    appearance: none;
+
+    background: url("../../assets/icons/arrow-down.svg") no-repeat right;
+    background-position-x: calc(100% - 8px);
 
     &::placeholder {
         font: inherit;

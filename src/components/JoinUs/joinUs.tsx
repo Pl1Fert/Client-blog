@@ -1,7 +1,7 @@
 import { FC } from "react";
 import Link from "next/link";
 
-import { AppRoutes, ButtonBackgroundColor } from "@/constants";
+import { AppRoutes } from "@/constants";
 import { Button } from "@/UI";
 
 import styles from "./joinUs.module.scss";
@@ -13,7 +13,7 @@ export const JoinUs: FC = () => (
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
             incididunt.
         </p>
-        <Button backgroundColor={ButtonBackgroundColor.YELLOW}>
+        <Button yellow width="50%">
             <Link href={AppRoutes.CONTACT}>Join Now</Link>
         </Button>
     </section>

@@ -1,7 +1,7 @@
 import { ButtonHTMLAttributes } from "react";
 
-import { ButtonBackgroundColor } from "@/constants";
-
 export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-    backgroundColor?: ButtonBackgroundColor;
+    yellow?: boolean;
+    white?: boolean;
+    width?: "50%";
 }

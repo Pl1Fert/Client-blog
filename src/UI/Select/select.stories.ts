@@ -1,40 +1,41 @@
 import { Meta, StoryObj } from "@storybook/react";
 
-import { Button } from "@/UI";
+import { Select } from "@/UI";
 
-const meta: Meta<typeof Button> = {
-    title: "Button",
-    component: Button,
+const meta: Meta<typeof Select> = {
+    title: "Select",
+    component: Select,
     tags: ["autodocs"],
     argTypes: {
-        children: {
-            control: {
-                type: "text",
-            },
-        },
         width: {
             options: ["50%", undefined],
             control: { type: "radio" },
         },
-        yellow: {
+        dark: {
             control: {
                 type: "boolean",
             },
         },
-        white: {
+        light: {
             control: {
                 type: "boolean",
+            },
+        },
+        label: {
+            control: {
+                type: "text",
             },
         },
     },
 };
 export default meta;
 
-type Story = StoryObj<typeof Button>;
+type Story = StoryObj<typeof Select>;
 
 export const Default: Story = {
     args: {
-        children: "Button",
-        yellow: true,
+        label: "Select",
+        options: ["option 1", "option 2", "option 3"],
+        light: true,
     },
 };
