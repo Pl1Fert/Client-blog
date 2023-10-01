@@ -1,0 +1,56 @@
+@import "@/styles/colors";
+
+.card {
+    padding: 32px;
+    border: 1px solid $light-grey;
+
+    display: flex;
+    flex-direction: column;
+
+    cursor: pointer;
+    transition: all 0.3s linear;
+
+    .iconWrapper {
+        width: 48px;
+        height: 48px;
+        margin-bottom: 15px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        background-color: $milk;
+        border-radius: 10px;
+
+        transition: all 0.3s linear;
+    }
+
+    &:hover {
+        background-color: $yellow;
+        border-color: $yellow;
+
+        .iconWrapper {
+            background-color: $white;
+        }
+    }
+
+    &Small {
+        padding: 15px;
+        flex-direction: row;
+
+        .iconWrapper {
+            margin-bottom: 0;
+            margin-right: 15px;
+        }
+    }
+
+    .title {
+        margin-bottom: 5px;
+    }
+
+    .text {
+        max-width: 230px;
+
+        color: $dark-grey;
+    }
+}

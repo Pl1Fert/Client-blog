@@ -1,0 +1,14 @@
+.categories {
+    padding: 64px 0;
+
+    &Title {
+        margin-bottom: 48px;
+    }
+
+    &Row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
