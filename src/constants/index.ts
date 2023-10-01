@@ -7,3 +7,5 @@ export * from "./privacyPolicy";
 export * from "./envVariables";
 export * from "./citiesCoordinates";
 export * from "./mailQueries";
+export * from "./logos";
+export * from "./testimonials";
