@@ -1,13 +1,13 @@
 import { Meta, StoryObj } from "@storybook/react";
 
-import { Button } from "@/UI";
+import { TextArea } from "@/UI";
 
-const meta: Meta<typeof Button> = {
-    title: "Button",
-    component: Button,
+const meta: Meta<typeof TextArea> = {
+    title: "TextArea",
+    component: TextArea,
     tags: ["autodocs"],
     argTypes: {
-        children: {
+        placeholder: {
             control: {
                 type: "text",
             },
@@ -16,12 +16,12 @@ const meta: Meta<typeof Button> = {
             options: ["50%", undefined],
             control: { type: "radio" },
         },
-        yellow: {
+        dark: {
             control: {
                 type: "boolean",
             },
         },
-        white: {
+        light: {
             control: {
                 type: "boolean",
             },
@@ -30,11 +30,11 @@ const meta: Meta<typeof Button> = {
 };
 export default meta;
 
-type Story = StoryObj<typeof Button>;
+type Story = StoryObj<typeof TextArea>;
 
 export const Default: Story = {
     args: {
-        children: "Button",
-        yellow: true,
+        placeholder: "Message",
+        light: true,
     },
 };

@@ -2,7 +2,6 @@
 
 import { FC, useEffect } from "react";
 
-import { ButtonBackgroundColor } from "@/constants";
 import { Button } from "@/UI";
 
 import styles from "./error.module.scss";
@@ -26,7 +25,7 @@ const Error: FC<ErrorProps> = ({ error, reset }) => {
             <body>
                 <section className={styles.section}>
                     <h2 className={styles.title}>Something went wrong!</h2>
-                    <Button backgroundColor={ButtonBackgroundColor.YELLOW} onClick={clickHandler}>
+                    <Button yellow width="50%" onClick={clickHandler}>
                         Try Again
                     </Button>
                 </section>

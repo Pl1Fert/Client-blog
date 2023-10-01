@@ -1,7 +1,7 @@
 import { FC } from "react";
 import Link from "next/link";
 
-import { AppRoutes, ButtonBackgroundColor } from "@/constants";
+import { AppRoutes } from "@/constants";
 import { Button } from "@/UI";
 
 import styles from "./not-found.module.scss";
@@ -15,7 +15,7 @@ const NotFound: FC = () => (
                 The page you are looking for does not exist. How you got here is a mystery. But you
                 can click the button below to go back to the homepage.
             </p>
-            <Button backgroundColor={ButtonBackgroundColor.YELLOW}>
+            <Button yellow width="50%">
                 <Link href={AppRoutes.HOME}>Home</Link>
             </Button>
         </div>

@@ -1,6 +1,7 @@
 @import "@/styles/colors";
 
 .button {
+    width: 100%;
     padding: 16px 48px;
     border: none;
 
@@ -28,5 +29,9 @@
         &:hover {
             background-color: $very-light-purple;
         }
+    }
+
+    &HalfWidth {
+        width: 50%;
     }
 }
