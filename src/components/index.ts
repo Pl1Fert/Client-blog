@@ -1,6 +1,7 @@
 export * from "./AuthorCard";
 export * from "./AuthorRow";
 export * from "./Carousel";
+export * from "./CategoryItem";
 export * from "./ContactForm";
 export * from "./Footer";
 export * from "./Header";
