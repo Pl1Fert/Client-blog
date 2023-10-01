@@ -9,3 +9,5 @@ export * from "./citiesCoordinates";
 export * from "./mailQueries";
 export * from "./logos";
 export * from "./testimonials";
+export * from "./categories";
+export * from "./homePosts";
