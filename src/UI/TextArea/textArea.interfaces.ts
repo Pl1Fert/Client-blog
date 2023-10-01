@@ -4,4 +4,5 @@ export interface TextAreaProps extends TextareaHTMLAttributes<HTMLTextAreaElemen
     width?: "50%";
     light?: boolean;
     dark?: boolean;
+    hasError?: boolean;
 }

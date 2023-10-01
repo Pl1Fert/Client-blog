@@ -6,4 +6,5 @@ export interface SelectProps extends SelectHTMLAttributes<HTMLSelectElement> {
     dark?: boolean;
     label: string;
     options: string[];
+    hasError?: boolean;
 }
