@@ -2,7 +2,7 @@
     "top": {
         "title": {
             "firstPart": "Hey there, I’m ",
-            "secontPart": " and welcome to my Blog"
+            "secondPart": " and welcome to my Blog"
         }
     },
     "posts": {

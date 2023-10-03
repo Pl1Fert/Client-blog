@@ -1,6 +1,7 @@
 "use client";
 
 import { FC } from "react";
+import clsx from "clsx";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 
@@ -13,6 +14,7 @@ import styles from "./postItem.module.scss";
 export const PostItem: FC<PostItemProps> = ({
     post: { img, title, description, category, id },
     lng,
+    column,
 }) => {
     const router = useRouter();
 
@@ -21,7 +23,7 @@ export const PostItem: FC<PostItemProps> = ({
     };
 
     return (
-        <div className={styles.post} onClick={clickHandler}>
+        <div className={clsx(styles.post, column && styles.postColumn)} onClick={clickHandler}>
             <Image src={img} alt={title} loading="lazy" className={styles.postImage} />
             <div className={styles.postContent}>
                 <h5 className={styles.postCategory}>{category}</h5>
