@@ -1,0 +1,54 @@
+{
+    "top": {
+        "supTitle": {
+            "supTitle": "Posted on ",
+            "span": "startup"
+        },
+        "title": "Step-by-step guide to choosing great font pairs",
+        "text": {
+            "firstPart": "By ",
+            "span": "James West",
+            "secondPart": " | May 23, 2022",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        "button": "Read More >"
+    },
+    "posts": {
+        "title": "Featured Post",
+        "featuredPost": {
+            "author": "By John Doe | May 23, 2022",
+            "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+            "text": " Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
+            "button": "Read More >"
+        },
+        "allPosts": {
+            "title": "All Posts",
+            "link": "View All"
+        }
+    },
+    "about": {
+        "supTitle": "ABOUT US",
+        "title": "We are a community of content writers who share their learnings",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "block": {
+            "supTitle": "Our mision",
+            "title": "Creating valuable content for creatives all around the world",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus."
+        },
+        "button": "Read More >"
+    },
+    "categories": {
+        "title": "Choose A Category"
+    },
+    "whyWeStarted": {
+        "supTitle": "Why we started",
+        "title": "It started out as a simple idea and evolved into our passion",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.",
+        "button": "Discover Our Story >"
+    },
+    "carousel": {
+        "supTitle": "TESTIMONIALS",
+        "title": "What people say about our blog",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."
+    }
+}
