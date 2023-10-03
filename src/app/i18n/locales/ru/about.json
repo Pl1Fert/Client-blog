@@ -1,0 +1,36 @@
+{
+    "top": {
+        "supTitle": "О Нас",
+        "title": "Мы - команда авторов контента, которые делятся своими знаниями",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+    },
+    "stats": {
+        "blogs": "Блогов Опубликовано",
+        "views": "Просмотров на Finsweet",
+        "users": "Активные Пользователи"
+    },
+    "misionVision": {
+        "block_1": {
+            "supTitle": "Наша Миссия",
+            "title": "Creating valuable content for creatives all around the world",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus."
+        },
+        "block_2": {
+            "supTitle": "Наше Видение",
+            "title": "Платформа, которая дает людям возможность совершенствоваться",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus."
+        }
+    },
+    "description": {
+        "block_1": {
+            "subTitle": "Наша команда креативщиков",
+            "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat."
+        },
+        "block_2": {
+            "subTitle": "Почему мы завели этот блог",
+            "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat."
+        }
+    }
+}

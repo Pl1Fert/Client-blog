@@ -1,11 +1,54 @@
 {
-    "h1": "A simple example",
-    "title": "Привет",
-    "to-client-page": "To client page",
-    "to-second-page": "To second page",
-    "welcome": "Welcome to Next.js 13 <1>with the new app directory features</1> and i18next",
-    "blog": {
-        "text": "Check out the corresponding <1>blog post</1> describing this example.",
-        "link": "https://locize.com/blog/next-13-app-dir-i18n/"
+    "top": {
+        "supTitle": {
+            "supTitle": "Опубликовано на ",
+            "span": "startup"
+        },
+        "title": "Пошаговое руководство по выбору подходящих пар шрифтов",
+        "text": {
+            "firstPart": "От ",
+            "span": "James West",
+            "secondPart": " | Май 23, 2022",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        "button": "Подробнее >"
+    },
+    "posts": {
+        "title": "Избранный пост",
+        "featuredPost": {
+            "author": "By John Doe | May 23, 2022",
+            "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
+            "text": " Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
+            "button": "Подробнее >"
+        },
+        "allPosts": {
+            "title": "Посты",
+            "link": "Просмотреть все"
+        }
+    },
+    "about": {
+        "supTitle": "О нас",
+        "title": "Мы - сообщество авторов контента, которые делятся своими знаниями",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "block": {
+            "supTitle": "Наша миссия",
+            "title": "Создание ценного контента для креативщиков по всему миру",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus."
+        },
+        "button": "Подробнее >"
+    },
+    "categories": {
+        "title": "Выберите Категорию"
+    },
+    "whyWeStarted": {
+        "supTitle": "Почему мы начали",
+        "title": "Все начиналось как простая идея и переросло в нашу страсть",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.",
+        "button": "Наша история >"
+    },
+    "carousel": {
+        "supTitle": "Рекомендации",
+        "title": "Что люди говорят о нашем блоге",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor."
     }
 }
