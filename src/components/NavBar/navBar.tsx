@@ -11,20 +11,23 @@ import { NavBarProps } from "./navBar.interfaces";
 
 import styles from "./navBar.module.scss";
 
-export const NavBar: FC<NavBarProps> = ({ full }) => {
-    const pathname = usePathname() as AppRoutes;
+export const NavBar: FC<NavBarProps> = ({ full, lng }) => {
+    const pathname = usePathname();
 
     const renderNav = (): JSX.Element[] => {
         const links: typeof LINKS = full ? [...LINKS] : [...LINKS.slice(0, -1)];
 
-        return links.map(({ id, title, href }) => (
-            <Link
-                key={id}
-                href={href}
-                className={clsx(styles.link, pathname === href && styles.linkActive)}>
-                {title}
-            </Link>
-        ));
+        return links.map(({ id, title, href }) => {
+            const to = href.length === 1 ? `/${lng}` : `/${lng}${href}`;
+            return (
+                <Link
+                    key={id}
+                    href={to}
+                    className={clsx(styles.link, pathname === to && styles.linkActive)}>
+                    {title}
+                </Link>
+            );
+        });
     };
 
     return (

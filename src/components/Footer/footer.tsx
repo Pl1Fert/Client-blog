@@ -2,16 +2,18 @@ import { FC } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-import { NavBar, SubscribeForm } from "@/components";
+import { LanguageSwitcher, NavBar, SubscribeForm } from "@/components";
 import { BLOG_SOCIAL_LINKS } from "@/constants";
 import { Container } from "@/hocs";
 
+import { FooterProps } from "./footer.interfaces";
+
 import styles from "./footer.module.scss";
 
-export const Footer: FC = () => (
+export const Footer: FC<FooterProps> = ({ lng }) => (
     <footer className={styles.footer}>
         <Container>
-            <NavBar full />
+            <NavBar full lng={lng} />
             <div className={styles.footerContent}>
                 <h2 className={styles.title}>
                     Subscribe to our news letter to get latest updates and news
@@ -24,6 +26,7 @@ export const Footer: FC = () => (
                     Finstreet 118 2561 Fintown <br />
                     Hello@finsweet.com 020 7993 2905
                 </p>
+                <LanguageSwitcher lng={lng} />
                 <div className={styles.socials}>
                     {BLOG_SOCIAL_LINKS.map(({ id, href, icon }) => (
                         <Link key={id} href={href}>

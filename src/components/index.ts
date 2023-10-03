@@ -6,6 +6,7 @@ export * from "./ContactForm";
 export * from "./Footer";
 export * from "./Header";
 export * from "./JoinUs";
+export * from "./LanguageSwitcher";
 export * from "./LoadingSpinner";
 export * from "./MapComponent";
 export * from "./NavBar";

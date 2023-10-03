@@ -2,3 +2,4 @@
 /dist
 yarn.lock
 next.config.js
+/src/app/i18n
