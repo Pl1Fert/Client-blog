@@ -10,4 +10,5 @@ export * from "./LanguageSwitcher";
 export * from "./LoadingSpinner";
 export * from "./MapComponent";
 export * from "./NavBar";
+export * from "./PostItem";
 export * from "./SubscribeForm";

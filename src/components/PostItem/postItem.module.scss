@@ -1,0 +1,35 @@
+@import "@/styles/colors";
+.post {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    cursor: pointer;
+    transition: all 0.3s linear;
+
+    &Content {
+        max-width: 580px;
+    }
+
+    &Category {
+        margin-bottom: 20px;
+
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+
+        color: $purple;
+    }
+
+    &Title {
+        margin-bottom: 16px;
+    }
+
+    &Text {
+        color: $dark-grey;
+    }
+
+    &:hover {
+        background-color: $milk;
+    }
+}

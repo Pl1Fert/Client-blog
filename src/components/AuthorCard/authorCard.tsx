@@ -31,11 +31,7 @@ export const AuthorCard: FC<AuthorCardProps> = ({
             <div className={styles.socials}>
                 {socials.map(({ id, href, icon }) => (
                     <Link key={id} href={href}>
-                        {icon ? (
-                            <Image src={icon.darkIcon} alt={icon.alt} loading="lazy" />
-                        ) : (
-                            <p>Link</p>
-                        )}
+                        <Image src={icon.darkIcon} alt={icon.alt} loading="lazy" />
                     </Link>
                 ))}
             </div>

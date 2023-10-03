@@ -51,25 +51,21 @@ export const SOCIALS_ICONS = [
 export const BLOG_SOCIAL_LINKS = [
     {
         id: 1,
-        // icon: SOCIALS_ICONS.find((x) => x.alt === SocialsName.FACEBOOK),
         icon: SOCIALS_ICONS[0],
         href: BlogSocialPages.FACEBOOK,
     },
     {
         id: 2,
-        // icon: SOCIALS_ICONS.find((x) => x.alt === SocialsName.FACEBOOK),
         icon: SOCIALS_ICONS[1],
         href: BlogSocialPages.TWITTER,
     },
     {
         id: 3,
-        // icon: SOCIALS_ICONS.find((x) => x.alt === SocialsName.FACEBOOK),
         icon: SOCIALS_ICONS[2],
         href: BlogSocialPages.INSTAGRAM,
     },
     {
         id: 4,
-        // icon: SOCIALS_ICONS.find((x) => x.alt === SocialsName.FACEBOOK),
         icon: SOCIALS_ICONS[3],
         href: BlogSocialPages.LINKEDIN,
     },

@@ -69,6 +69,9 @@ export const AUTHORS = [
             href: AUTHORS_LINKS[0][index],
         })),
         img: AuthorImage_1 as string,
+        posts: [1, 5],
+        description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus.",
     },
     {
         id: 2,
@@ -79,6 +82,9 @@ export const AUTHORS = [
             href: AUTHORS_LINKS[1][index],
         })),
         img: AuthorImage_2 as string,
+        posts: [2, 3],
+        description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus.",
     },
     {
         id: 3,
@@ -89,6 +95,9 @@ export const AUTHORS = [
             href: AUTHORS_LINKS[2][index],
         })),
         img: AuthorImage_3 as string,
+        posts: [2, 5, 6],
+        description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus.",
     },
     {
         id: 4,
@@ -99,6 +108,9 @@ export const AUTHORS = [
             href: AUTHORS_LINKS[3][index],
         })),
         img: AuthorImage_4 as string,
+        posts: [1, 5, 10],
+        description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus.",
     },
     {
         id: 5,
@@ -109,6 +121,9 @@ export const AUTHORS = [
             href: AUTHORS_LINKS[4][index],
         })),
         img: AuthorImage_5 as string,
+        posts: [],
+        description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus.",
     },
     {
         id: 6,
@@ -119,6 +134,9 @@ export const AUTHORS = [
             href: AUTHORS_LINKS[5][index],
         })),
         img: AuthorImage_6 as string,
+        posts: [8, 5],
+        description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus.",
     },
     {
         id: 7,
@@ -129,6 +147,9 @@ export const AUTHORS = [
             href: AUTHORS_LINKS[6][index],
         })),
         img: AuthorImage_7 as string,
+        posts: [7, 9],
+        description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus.",
     },
     {
         id: 8,
@@ -139,5 +160,8 @@ export const AUTHORS = [
             href: AUTHORS_LINKS[7][index],
         })),
         img: AuthorImage_8 as string,
+        posts: [2, 9],
+        description:
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At risus viverra adipiscing at in tellus.",
     },
 ];

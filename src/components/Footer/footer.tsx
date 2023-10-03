@@ -32,7 +32,7 @@ export const Footer: FC<FooterProps> = async ({ lng }) => {
                     <div className={styles.socials}>
                         {BLOG_SOCIAL_LINKS.map(({ id, href, icon }) => (
                             <Link key={id} href={href}>
-                                {icon ? <Image src={icon.lightIcon} alt={icon.alt} /> : <p>Link</p>}
+                                <Image src={icon.lightIcon} alt={icon.alt} />
                             </Link>
                         ))}
                     </div>
