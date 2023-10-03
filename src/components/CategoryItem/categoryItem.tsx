@@ -11,11 +11,15 @@ import { CategoryItemProps } from "./categoryItem.interfaces";
 
 import styles from "./categoryItem.module.scss";
 
-export const CategoryItem: FC<CategoryItemProps> = ({ small, item: { id, text, icon, title } }) => {
+export const CategoryItem: FC<CategoryItemProps> = ({
+    small,
+    item: { id, text, icon, title },
+    lng,
+}) => {
     const router = useRouter();
 
     const clickHandler = (): void => {
-        router.push(`${AppRoutes.CATEGORIES}/${id}`);
+        router.push(`/${lng}${AppRoutes.CATEGORIES}/${id}`);
     };
 
     return (

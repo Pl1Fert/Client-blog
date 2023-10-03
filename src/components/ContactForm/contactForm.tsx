@@ -4,11 +4,12 @@ import { FC, SyntheticEvent, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { ValidationError } from "yup";
 
+import { useTranslation } from "@/app/i18n/client";
 import { ENV_VARS, MAIL_QUERIES } from "@/constants";
 import { Button, Input, Select, TextArea } from "@/UI";
 import { contactFormSchema } from "@/validators";
 
-import { FormErrorsState, FormState } from "./contactForm.interfaces";
+import { FormErrorsState, FormProps, FormState } from "./contactForm.interfaces";
 
 import styles from "./contactForm.module.scss";
 
@@ -26,9 +27,10 @@ const initialErrors: FormErrorsState = {
     message: false,
 };
 
-export const ContactForm: FC = () => {
+export const ContactForm: FC<FormProps> = ({ lng }) => {
     const [formData, setFormData] = useState<FormState>(initialState);
     const [errors, setErrors] = useState<FormErrorsState>(initialErrors);
+    const { t } = useTranslation(lng, "contact");
 
     const onChangeHandler = (e: SyntheticEvent): void => {
         const { name, value } = e.target as HTMLInputElement;
@@ -81,7 +83,7 @@ export const ContactForm: FC = () => {
         <form className={styles.form}>
             <Input
                 name="name"
-                placeholder="Full Name"
+                placeholder={t("form.name")}
                 value={formData.name}
                 onChange={onChangeHandler}
                 hasError={errors.name}
@@ -89,7 +91,7 @@ export const ContactForm: FC = () => {
             />
             <Input
                 name="email"
-                placeholder="Your Email"
+                placeholder={t("form.email")}
                 value={formData.email}
                 onChange={onChangeHandler}
                 hasError={errors.email}
@@ -97,22 +99,22 @@ export const ContactForm: FC = () => {
             />
             <Select
                 name="query"
-                label="Query Related"
-                options={MAIL_QUERIES}
+                label={t("form.query")}
+                options={MAIL_QUERIES.map((query) => t(`form.queries.${query}`))}
                 onChange={onChangeHandler}
                 hasError={errors.query}
                 light
             />
             <TextArea
                 name="message"
-                placeholder="Message"
+                placeholder={t("form.message")}
                 value={formData.message}
                 onChange={onChangeHandler}
                 hasError={errors.message}
                 light
             />
             <Button yellow onClick={sendEmail}>
-                Send Message
+                {t("form.button")}
             </Button>
         </form>
     );

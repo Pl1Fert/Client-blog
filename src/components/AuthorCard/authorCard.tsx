@@ -11,11 +11,14 @@ import { AuthorCardProps } from "./authorCard.interfaces";
 
 import styles from "./authorCard.module.scss";
 
-export const AuthorCard: FC<AuthorCardProps> = ({ author: { id, name, role, socials, img } }) => {
+export const AuthorCard: FC<AuthorCardProps> = ({
+    author: { id, name, role, socials, img },
+    lng,
+}) => {
     const router = useRouter();
 
     const clickHandler = (): void => {
-        router.push(`${AppRoutes.AUTHORS}/${id}`);
+        router.push(`/${lng}${AppRoutes.AUTHORS}/${id}`);
     };
 
     return (

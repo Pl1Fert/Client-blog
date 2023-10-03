@@ -5,6 +5,7 @@ import clsx from "clsx";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
+import { useTranslation } from "@/app/i18n/client";
 import { AppRoutes, LINKS } from "@/constants";
 
 import { NavBarProps } from "./navBar.interfaces";
@@ -13,6 +14,7 @@ import styles from "./navBar.module.scss";
 
 export const NavBar: FC<NavBarProps> = ({ full, lng }) => {
     const pathname = usePathname();
+    const { t } = useTranslation(lng, "links");
 
     const renderNav = (): JSX.Element[] => {
         const links: typeof LINKS = full ? [...LINKS] : [...LINKS.slice(0, -1)];
@@ -24,7 +26,7 @@ export const NavBar: FC<NavBarProps> = ({ full, lng }) => {
                     key={id}
                     href={to}
                     className={clsx(styles.link, pathname === to && styles.linkActive)}>
-                    {title}
+                    {t(title)}
                 </Link>
             );
         });

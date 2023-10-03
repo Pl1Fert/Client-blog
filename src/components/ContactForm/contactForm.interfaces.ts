@@ -11,3 +11,7 @@ export interface FormErrorsState {
     query: boolean;
     message: boolean;
 }
+
+export interface FormProps {
+    lng: string;
+}
