@@ -1,3 +1,38 @@
+@import "@/styles/colors";
+
+.top {
+    padding: 80px 0;
+    background-color: $very-light-purple;
+
+    &Inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &Content {
+        max-width: 625px;
+    }
+
+    &SupTitle {
+        margin-bottom: 20px;
+
+        font-weight: 500;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    &Title {
+        margin-bottom: 16px;
+    }
+
+    &Text {
+        margin-bottom: 32px;
+
+        color: $dark-grey;
+    }
+}
+
 .categories {
     padding: 64px 0;
 

@@ -1,5 +1,16 @@
 {
     "categories": {
         "title": "Все категории"
+    },
+    "top": {
+        "button": "Подробнее >",
+        "supTitle": "Избранный пост"
+    },
+    "posts": {
+        "title": "Мои Посты",
+        "controls": {
+            "prev": "< Пред",
+            "next": "След >"
+        }
     }
 }

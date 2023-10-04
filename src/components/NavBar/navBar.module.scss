@@ -3,6 +3,12 @@
 .nav {
     display: flex;
     align-items: center;
+
+    &Full {
+        .link:last-child {
+            margin-right: 0;
+        }
+    }
 }
 
 .homeLink {

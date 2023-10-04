@@ -37,7 +37,7 @@ export const NavBar: FC<NavBarProps> = ({ full, lng }) => {
             <Link href={AppRoutes.HOME} className={styles.homeLink}>
                 Modsen Client Blog
             </Link>
-            <nav className={styles.nav}>{renderNav()}</nav>
+            <nav className={clsx(styles.nav, full && styles.navFull)}>{renderNav()}</nav>
         </div>
     );
 };
