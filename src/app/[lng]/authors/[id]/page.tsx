@@ -48,12 +48,18 @@ const Author: FC<AuthorProps> = async ({ params: { lng, id } }) => {
             </section>
             <Container>
                 <section className={styles.posts}>
-                    <h1 className={styles.postsTitle}>{t("posts.title")}</h1>
-                    <div className={styles.postsRow}>
-                        {authorPosts.map((post) => (
-                            <PostItem key={post.id} lng={lng} post={post} />
-                        ))}
-                    </div>
+                    {authorPosts.length > 0 ? (
+                        <>
+                            <h2 className={styles.postsTitle}>{t("posts.title")}</h2>
+                            <div className={styles.postsRow}>
+                                {authorPosts.map((post) => (
+                                    <PostItem key={post.id} lng={lng} post={post} />
+                                ))}
+                            </div>
+                        </>
+                    ) : (
+                        <h2 className={styles.postsSecondTitle}>{t("posts.secondTitle")}</h2>
+                    )}
                 </section>
             </Container>
         </>

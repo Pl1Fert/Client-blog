@@ -9,5 +9,6 @@ export * from "./homePosts";
 export * from "./links";
 export * from "./logos";
 export * from "./mailQueries";
+export * from "./tags";
 export * from "./posts";
 export * from "./testimonials";

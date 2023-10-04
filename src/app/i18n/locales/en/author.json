@@ -6,6 +6,7 @@
         }
     },
     "posts": {
-        "title": "My Posts"
+        "title": "My Posts",
+        "secondTitle": "No Posts"
     }
 }
