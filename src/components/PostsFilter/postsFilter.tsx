@@ -78,7 +78,7 @@ const PostsFilter: FC<PostsFilterProps> = ({ lng, title, posts: comingPosts }) =
                     </div>
                 </div>
                 <div className={styles.tags}>
-                    <h2 className={styles.tagsTitle}>{t("categories.title")}</h2>
+                    <h2 className={styles.tagsTitle}>{t("tags.title")}</h2>
                     {TAGS.map(({ id, title }) => (
                         <div
                             className={clsx(

@@ -1,0 +1,11 @@
+{
+    "input": "Поиск Тега",
+    "secondTitle": "Постов Нет",
+    "title": "Посты",
+    "categories": {
+        "title": "Категории"
+    },
+    "tags": {
+        "title": "Теги"
+    }
+}

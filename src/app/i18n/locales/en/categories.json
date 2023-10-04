@@ -1,0 +1,11 @@
+{
+    "input": "Search Tag",
+    "secondTitle": "No Posts",
+    "title": "All Posts",
+    "categories": {
+        "title": "Categories"
+    },
+    "tags": {
+        "title": "Tags"
+    }
+}
