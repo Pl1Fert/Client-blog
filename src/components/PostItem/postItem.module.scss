@@ -30,6 +30,10 @@
             width: 290px;
             height: 290px;
         }
+
+        @media screen and (max-width: 550px) {
+            width: 100%;
+        }
     }
     &Title {
         margin-bottom: 16px;
@@ -69,5 +73,10 @@
             flex-direction: column;
             justify-content: space-between;
         }
+    }
+
+    @media screen and (max-width: 1220px) {
+        flex-direction: column-reverse;
+        gap: 20px;
     }
 }

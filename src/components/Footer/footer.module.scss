@@ -16,8 +16,25 @@
         align-items: center;
         justify-content: space-between;
 
+        @media screen and (max-width: 1150px) {
+            flex-direction: column;
+            gap: 20px;
+        }
+
         h2 {
             width: 60%;
+
+            @media screen and (max-width: 1150px) {
+                width: 100%;
+            }
+        }
+
+        @media screen and (max-width: 475px) {
+            padding: 80px 40px;
+        }
+
+        @media screen and (max-width: 375px) {
+            padding: 80px 20px;
         }
     }
 }
@@ -39,6 +56,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @media screen and (max-width: 550px) {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
 }
 
 .text {

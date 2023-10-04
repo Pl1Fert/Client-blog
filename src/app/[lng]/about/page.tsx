@@ -27,7 +27,12 @@ const About: FC<AboutProps> = async ({ params: { lng } }) => {
                 </div>
             </section>
             <section className={styles.stats}>
-                <Image src={Background} alt="Background" loading="lazy" />
+                <Image
+                    src={Background}
+                    alt="Background"
+                    loading="lazy"
+                    className={styles.statsImage}
+                />
                 <div className={styles.whiteBlock} />
                 <div className={styles.yellowBlock} />
                 <div className={styles.purpleBlock} />

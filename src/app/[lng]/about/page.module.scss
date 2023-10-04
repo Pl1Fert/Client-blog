@@ -11,6 +11,10 @@
     &Headers {
         max-width: 496px;
         margin-right: 96px;
+
+        @media screen and (max-width: 550px) {
+            margin-right: 0;
+        }
     }
 
     &SupTitle {
@@ -19,8 +23,21 @@
         text-transform: uppercase;
     }
 
-    &Text {
+    &Content {
         max-width: 477px;
+        @media screen and (max-width: 880px) {
+            align-self: flex-start;
+        }
+
+        @media screen and (max-width: 650px) {
+            margin-bottom: 30px;
+        }
+    }
+
+    @media screen and (max-width: 880px) {
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 30px;
     }
 }
 
@@ -40,6 +57,22 @@
         align-items: center;
 
         background-color: $yellow;
+
+        @media screen and (max-width: 1000px) {
+            width: 70%;
+        }
+
+        @media screen and (max-width: 800px) {
+            left: 0;
+            top: 0;
+
+            height: 100%;
+            width: 156px;
+            padding: 32px 20px;
+
+            flex-direction: column;
+            gap: 20px;
+        }
     }
 
     &Block {
@@ -49,10 +82,22 @@
         &:last-child {
             margin-right: 0;
         }
+
+        @media screen and (max-width: 800px) {
+            margin-right: 0;
+        }
     }
 
     &Title {
         font-size: 56px;
+
+        @media screen and (max-width: 880px) {
+            font-size: 45px;
+        }
+    }
+
+    &Image {
+        width: 100%;
     }
 }
 
@@ -65,6 +110,14 @@
     height: 60px;
 
     background-color: $white;
+
+    @media screen and (max-width: 1350px) {
+        left: 0;
+    }
+
+    @media screen and (max-width: 650px) {
+        display: none;
+    }
 }
 
 .purpleBlock {
@@ -76,6 +129,10 @@
     height: 20px;
 
     background-color: $purple;
+
+    @media screen and (max-width: 1100px) {
+        width: 20%;
+    }
 }
 
 .yellowBlock {
@@ -87,6 +144,11 @@
     height: 20px;
 
     background-color: $yellow;
+
+    @media screen and (max-width: 1100px) {
+        width: 50%;
+        left: calc(30%);
+    }
 }
 
 .misionVision {
@@ -95,9 +157,18 @@
 
     background-color: $very-light-purple;
 
+    @media screen and (max-width: 550px) {
+        padding: 128px 40px 64px;
+    }
+
     &Row {
         display: flex;
         align-items: center;
+
+        @media screen and (max-width: 1000px) {
+            flex-direction: column;
+            gap: 30px;
+        }
     }
 
     &Block {
@@ -106,6 +177,11 @@
 
         &:last-child {
             margin-right: 0;
+        }
+
+        @media screen and (max-width: 1000px) {
+            margin-right: 0;
+            text-align: center;
         }
     }
 
@@ -137,10 +213,20 @@
         text-align: left;
 
         color: $dark-blue;
+
+        @media screen and (max-width: 1250px) {
+            flex-direction: column;
+            padding: 30px 0;
+        }
     }
 
     &Content {
         max-width: 520px;
+
+        @media screen and (max-width: 1250px) {
+            max-width: none;
+            margin-bottom: 30px;
+        }
     }
 
     &Title {
@@ -153,6 +239,21 @@
 
     &Image {
         position: relative;
+
+        &:last-child {
+            margin-bottom: 30px;
+        }
+
+        img {
+            @media screen and (max-width: 650px) {
+                width: 100%;
+            }
+
+            @media screen and (max-width: 550px) {
+                object-fit: contain;
+                height: 100%;
+            }
+        }
     }
 }
 
@@ -166,6 +267,10 @@
 
     border-top-left-radius: 50%;
     background-color: $yellow;
+
+    @media screen and (max-width: 750px) {
+        display: none;
+    }
 }
 
 .figure_2 {
@@ -178,4 +283,8 @@
 
     border-radius: 50%;
     background-color: $purple;
+
+    @media screen and (max-width: 750px) {
+        display: none;
+    }
 }

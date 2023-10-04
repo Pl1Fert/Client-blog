@@ -32,7 +32,12 @@ const Posts: FC<PostsProps> = async ({ params: { lng } }) => {
                                 </Link>
                             </Button>
                         </div>
-                        <Image src={feauturedPost.img} alt={feauturedPost.title} loading="lazy" />
+                        <Image
+                            src={feauturedPost.img}
+                            alt={feauturedPost.title}
+                            loading="lazy"
+                            className={styles.topImage}
+                        />
                     </div>
                 </Container>
             </section>

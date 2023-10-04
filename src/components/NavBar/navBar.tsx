@@ -34,9 +34,15 @@ export const NavBar: FC<NavBarProps> = ({ full, lng }) => {
 
     return (
         <div className={styles.row}>
-            <Link href={AppRoutes.HOME} className={styles.homeLink}>
+            <Link href={`/${lng}${AppRoutes.HOME}`} className={styles.homeLink}>
                 Modsen Client Blog
             </Link>
+            <input id={styles.menuToggle} type="checkbox" />
+            <label
+                className={clsx(styles.menuBtn, full && styles.menuBtnFull)}
+                htmlFor={styles.menuToggle}>
+                <span />
+            </label>
             <nav className={clsx(styles.nav, full && styles.navFull)}>{renderNav()}</nav>
         </div>
     );

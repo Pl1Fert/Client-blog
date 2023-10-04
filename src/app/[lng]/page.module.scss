@@ -27,6 +27,14 @@
         color: $white;
 
         z-index: 3;
+
+        @media screen and (max-width: 575px) {
+            padding: 128px 40px 0;
+        }
+
+        @media screen and (max-width: 475px) {
+            padding: 128px 20px 0;
+        }
     }
 
     &Image {
@@ -55,6 +63,14 @@
         margin-bottom: 24px;
 
         font-size: 56px;
+
+        @media screen and (max-width: 650px) {
+            font-size: 48px;
+        }
+
+        @media screen and (max-width: 575px) {
+            font-size: 36px;
+        }
     }
 
     &Text {
@@ -79,6 +95,11 @@
     &Title {
         margin-bottom: 32px;
     }
+
+    @media screen and (max-width: 1150px) {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .featuredPost {
@@ -86,6 +107,14 @@
         padding: 32px;
         border: 1px solid $light-grey;
         margin-right: 32px;
+
+        @media screen and (max-width: 1150px) {
+            margin-right: 0;
+        }
+
+        @media screen and (max-width: 800px) {
+            border: none;
+        }
     }
 
     &Author {
@@ -101,6 +130,17 @@
     &Text {
         max-width: 570px;
         margin-bottom: 32px;
+    }
+
+    &Image {
+        @media screen and (max-width: 800px) {
+            width: 100%;
+            aspect-ratio: 16/9;
+        }
+    }
+
+    @media screen and (max-width: 1150px) {
+        margin-bottom: 30px;
     }
 }
 
@@ -146,6 +186,14 @@
 .post {
     padding: 25px 150px 25px 30px;
 
+    @media screen and (max-width: 1300px) {
+        padding-right: 50px;
+    }
+
+    @media screen and (max-width: 1150px) {
+        padding-right: 0;
+    }
+
     transition: all 0.3s linear;
 
     &:hover {
@@ -162,11 +210,20 @@
 
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 
     &Title {
         margin-right: 85px;
 
         color: $light-grey;
+
+        @media screen and (max-width: 1350px) {
+            margin-bottom: 15px;
+        }
+
+        @media screen and (max-width: 475px) {
+            margin-right: 40px;
+        }
     }
 
     &Item {
@@ -175,6 +232,22 @@
         &:last-child {
             margin-right: 0;
         }
+
+        @media screen and (max-width: 1350px) {
+            margin-bottom: 15px;
+        }
+
+        @media screen and (max-width: 475px) {
+            margin-right: 40px;
+
+            &:last-child {
+                margin-right: 40px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 1350px) {
+        justify-content: space-around;
     }
 }
 
@@ -183,6 +256,10 @@
     height: 25px;
 
     display: flex;
+
+    @media screen and (max-width: 1150px) {
+        margin-top: 0;
+    }
 }
 
 .whiteBlock {
@@ -209,11 +286,20 @@
 
     background-color: $very-light-purple;
 
+    @media screen and (max-width: 550px) {
+        padding: 94px 40px;
+    }
+
     &Row {
         margin-bottom: 20px;
 
         display: flex;
         align-items: flex-start;
+
+        @media screen and (max-width: 1100px) {
+            flex-direction: column;
+            gap: 30px;
+        }
     }
 
     &Block {
@@ -221,6 +307,10 @@
         margin-right: 30px;
 
         &:last-child {
+            margin-right: 0;
+        }
+
+        @media screen and (max-width: 550px) {
             margin-right: 0;
         }
     }
@@ -282,6 +372,14 @@
         background-color: $white;
 
         z-index: 2;
+
+        @media screen and (max-width: 850px) {
+            position: static;
+        }
+
+        @media screen and (max-width: 575px) {
+            padding: 80px 0;
+        }
     }
 
     &SupTitle {
@@ -301,6 +399,22 @@
 
         color: $dark-grey;
     }
+
+    &Image {
+        @media screen and (max-width: 1000px) {
+            width: 100%;
+        }
+
+        @media screen and (max-width: 850px) {
+            aspect-ratio: 16/9;
+        }
+
+        @media screen and (max-width: 575px) {
+            object-fit: contain;
+            aspect-ratio: 4/3;
+            height: 100%;
+        }
+    }
 }
 
 .categories {
@@ -317,5 +431,9 @@
         align-items: center;
         justify-content: space-between;
         flex-wrap: wrap;
+
+        @media screen and (max-width: 1350px) {
+            justify-content: space-around;
+        }
     }
 }

@@ -10,6 +10,15 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+
+        @media screen and (max-width: 1000px) {
+            flex-direction: column;
+            padding: 128px 80px;
+        }
+
+        @media screen and (max-width: 475px) {
+            padding: 128px 40px;
+        }
     }
 
     &Image {

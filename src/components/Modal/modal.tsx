@@ -34,7 +34,7 @@ const Modal: FC<ModalProps> = ({ lng }) => {
 
     return (
         <>
-            <div>
+            <div className={styles.button}>
                 <Button white onClick={toggleVisible}>
                     {t("button")}
                 </Button>

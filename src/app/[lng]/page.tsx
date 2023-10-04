@@ -54,7 +54,12 @@ const Home: FC<HomeProps> = async ({ params: { lng } }) => {
                     <article className={styles.featuredPost}>
                         <h2 className={styles.postsTitle}>{t("posts.title")}</h2>
                         <div className={styles.featuredPostContent}>
-                            <Image src={Post} alt="post" loading="lazy" />
+                            <Image
+                                src={Post}
+                                alt="post"
+                                loading="lazy"
+                                className={styles.featuredPostImage}
+                            />
                             <p className={styles.featuredPostAuthor}>
                                 {t("posts.featuredPost.author")}
                             </p>
@@ -71,7 +76,7 @@ const Home: FC<HomeProps> = async ({ params: { lng } }) => {
                             </Button>
                         </div>
                     </article>
-                    <article className={styles.allPosts}>
+                    <aside className={styles.allPosts}>
                         <div className={styles.allPostsHeader}>
                             <h2> {t("posts.allPosts.title")}</h2>
                             <Link
@@ -90,7 +95,7 @@ const Home: FC<HomeProps> = async ({ params: { lng } }) => {
                                 </div>
                             ))}
                         </div>
-                    </article>
+                    </aside>
                 </section>
                 <div className={styles.blocks}>
                     <div className={styles.whiteBlock} />
@@ -123,7 +128,12 @@ const Home: FC<HomeProps> = async ({ params: { lng } }) => {
                     </div>
                 </section>
                 <section className={styles.whyWeStarted}>
-                    <Image src={People} alt="people" loading="lazy" />
+                    <Image
+                        src={People}
+                        alt="people"
+                        loading="lazy"
+                        className={styles.whyWeStartedImage}
+                    />
                     <div className={styles.whyWeStartedContent}>
                         <h5 className={styles.whyWeStartedSupTitle}>
                             {t("whyWeStarted.supTitle")}

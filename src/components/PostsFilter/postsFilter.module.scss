@@ -5,6 +5,18 @@
 
     display: flex;
     gap: 150px;
+
+    @media screen and (max-width: 1000px) {
+        gap: 100px;
+    }
+
+    @media screen and (max-width: 700px) {
+        gap: 50px;
+    }
+
+    @media screen and (max-width: 660px) {
+        flex-direction: column-reverse;
+    }
 }
 
 .aside {
@@ -12,6 +24,10 @@
 
     &Input {
         margin-bottom: 60px;
+    }
+
+    @media screen and (max-width: 660px) {
+        margin: 0 auto;
     }
 }
 
@@ -21,6 +37,10 @@
     display: flex;
     flex-direction: column;
     gap: 32px;
+
+    @media screen and (max-width: 660px) {
+        width: 100%;
+    }
 }
 
 .categories {

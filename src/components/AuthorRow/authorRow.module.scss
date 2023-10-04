@@ -12,4 +12,8 @@
     display: flex;
     flex-wrap: wrap;
     gap: 32px;
+
+    @media screen and (max-width: 1400px) {
+        justify-content: space-around;
+    }
 }

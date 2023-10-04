@@ -5,6 +5,10 @@
 
     &Title {
         margin-bottom: 64px;
+
+        @media screen and (max-width: 1220px) {
+            text-align: center;
+        }
     }
 }
 
