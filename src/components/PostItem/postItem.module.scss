@@ -22,9 +22,14 @@
         color: $purple;
     }
 
-    img {
+    &Image {
         width: 490px;
         height: 320px;
+
+        &Small {
+            width: 290px;
+            height: 290px;
+        }
     }
     &Title {
         margin-bottom: 16px;

@@ -15,6 +15,7 @@ export const PostItem: FC<PostItemProps> = ({
     post: { img, title, description, category, id },
     lng,
     column,
+    small,
 }) => {
     const router = useRouter();
 
@@ -24,7 +25,12 @@ export const PostItem: FC<PostItemProps> = ({
 
     return (
         <div className={clsx(styles.post, column && styles.postColumn)} onClick={clickHandler}>
-            <Image src={img} alt={title} loading="lazy" className={styles.postImage} />
+            <Image
+                src={img}
+                alt={title}
+                loading="lazy"
+                className={clsx(styles.postImage, small && styles.postImageSmall)}
+            />
             <div className={styles.postContent}>
                 <h5 className={styles.postCategory}>{category}</h5>
                 <h2 className={styles.postTitle}>{title}</h2>
