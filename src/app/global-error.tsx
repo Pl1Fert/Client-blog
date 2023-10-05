@@ -4,7 +4,7 @@ import { FC, useEffect } from "react";
 
 import { Button } from "@/UI";
 
-import styles from "./error.module.scss";
+import styles from "./[lng]/error.module.scss";
 
 interface ErrorProps {
     error: Error & { digest?: string };
