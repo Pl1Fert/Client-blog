@@ -24,7 +24,10 @@ export const PostItem: FC<PostItemProps> = ({
     };
 
     return (
-        <div className={clsx(styles.post, column && styles.postColumn)} onClick={clickHandler}>
+        <div
+            className={clsx(styles.post, column && styles.postColumn)}
+            onClick={clickHandler}
+            data-cy="item">
             <Image
                 src={img}
                 alt={title}

@@ -63,6 +63,7 @@ const PostsFilter: FC<PostsFilterProps> = ({ lng, title, posts: comingPosts }) =
             <aside className={styles.aside}>
                 <div className={styles.asideInput}>
                     <Input
+                        name="searchTag"
                         placeholder="Search Tag"
                         light
                         value={value}
@@ -86,7 +87,8 @@ const PostsFilter: FC<PostsFilterProps> = ({ lng, title, posts: comingPosts }) =
                                 activeTags.includes(title) && styles.tagsItemActive
                             )}
                             key={id}
-                            onClick={onTagClickHandler}>
+                            onClick={onTagClickHandler}
+                            data-cy="tag">
                             {title}
                         </div>
                     ))}

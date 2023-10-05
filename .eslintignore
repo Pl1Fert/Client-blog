@@ -3,3 +3,4 @@
 yarn.lock
 next.config.js
 /src/app/i18n
+/src/UI/**/*.test.tsx
