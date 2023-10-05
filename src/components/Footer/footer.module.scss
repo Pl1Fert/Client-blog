@@ -1,0 +1,81 @@
+@import "@/styles/colors";
+
+.footer {
+    padding: 55px 0;
+
+    background-color: $dark-blue;
+    color: $white;
+
+    &Content {
+        position: relative;
+
+        margin: 55px 0;
+        padding: 80px 65px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @media screen and (max-width: 1150px) {
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        h2 {
+            width: 60%;
+
+            @media screen and (max-width: 1150px) {
+                width: 100%;
+            }
+        }
+
+        @media screen and (max-width: 475px) {
+            padding: 80px 40px;
+        }
+
+        @media screen and (max-width: 375px) {
+            padding: 80px 20px;
+        }
+    }
+}
+
+.background {
+    position: absolute;
+    inset: 0;
+    background-color: $white;
+    opacity: 0.05;
+
+    z-index: 1;
+}
+
+.title {
+    z-index: 2;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media screen and (max-width: 550px) {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+}
+
+.text {
+    font-size: 16px;
+
+    color: $light-grey;
+}
+
+.socials {
+    a {
+        margin-right: 25px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}

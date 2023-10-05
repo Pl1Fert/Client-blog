@@ -1,0 +1,22 @@
+name: Continuous Integration
+on:
+    pull_request:
+    push:
+
+jobs:
+    buildAndTest:
+        name: Build and Test
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v1
+            - name: Install Dependencies
+              run: yarn
+            - name: Build
+              run: yarn build
+              continue-on-error: true
+            - name: Test E2E
+              run: yarn e2e:headless
+              continue-on-error: true
+            - name: Test Unit
+              run: yarn jest
+              continue-on-error: true

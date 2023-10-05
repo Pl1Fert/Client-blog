@@ -1,0 +1,66 @@
+@import "@/styles/colors";
+
+.posts {
+    padding: 128px 0 64px;
+
+    &Title {
+        margin-bottom: 64px;
+
+        @media screen and (max-width: 1220px) {
+            text-align: center;
+        }
+    }
+}
+
+.carousel {
+    &Item {
+        height: 100%;
+        display: none;
+
+        transition: opacity 0.3s ease;
+
+        &Active {
+            display: flex;
+            flex-direction: column;
+            gap: 64px;
+
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+    }
+
+    &Controls {
+        width: fit-content;
+        margin: 0 auto;
+        padding-top: 64px;
+
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        font-size: 20px;
+        font-weight: 500;
+
+        cursor: pointer;
+
+        &Item {
+            color: $dark-blue;
+
+            transition: all 0.3s linear;
+
+            &::after {
+                content: "";
+                display: block;
+                width: 0;
+                height: 2px;
+
+                background: $dark-blue;
+                transition: all 0.3s linear;
+            }
+
+            &:hover::after {
+                width: 100%;
+            }
+        }
+    }
+}

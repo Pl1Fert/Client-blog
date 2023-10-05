@@ -1,0 +1,89 @@
+@import "@/styles/colors";
+
+.section {
+    padding: 128px 0;
+
+    display: flex;
+    gap: 150px;
+
+    @media screen and (max-width: 1000px) {
+        gap: 100px;
+    }
+
+    @media screen and (max-width: 700px) {
+        gap: 50px;
+    }
+
+    @media screen and (max-width: 660px) {
+        flex-direction: column-reverse;
+    }
+}
+
+.aside {
+    max-width: 300px;
+
+    &Input {
+        margin-bottom: 60px;
+    }
+
+    @media screen and (max-width: 660px) {
+        margin: 0 auto;
+    }
+}
+
+.posts {
+    width: 80%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    @media screen and (max-width: 660px) {
+        width: 100%;
+    }
+}
+
+.categories {
+    padding-bottom: 48px;
+
+    &Title {
+        margin-bottom: 40px;
+    }
+
+    &Row {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+
+    &Title {
+        margin-bottom: 12px;
+        width: 100%;
+    }
+
+    &Item {
+        padding: 8px 30px;
+        border: 1px solid $dark-blue;
+
+        font-size: 16px;
+
+        border-radius: 15px;
+
+        cursor: pointer;
+        transition: all 0.3s linear;
+
+        &:hover,
+        &Active {
+            border-color: $white;
+
+            background-color: $dark-blue;
+            color: $white;
+        }
+    }
+}

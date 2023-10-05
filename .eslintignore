@@ -1,0 +1,7 @@
+/node_modules
+/dist
+yarn.lock
+next.config.js
+/src/app/i18n
+/src/UI/**/*.test.tsx
+/src/hooks/useElementOnScreen.tsx

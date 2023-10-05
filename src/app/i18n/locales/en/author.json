@@ -1,0 +1,12 @@
+{
+    "top": {
+        "title": {
+            "firstPart": "Hey there, I’m ",
+            "secondPart": " and welcome to my Blog"
+        }
+    },
+    "posts": {
+        "title": "My Posts",
+        "secondTitle": "No Posts"
+    }
+}

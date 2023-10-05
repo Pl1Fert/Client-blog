@@ -1,0 +1,16 @@
+{
+    "categories": {
+        "title": "All Categories"
+    },
+    "top": {
+        "button": "Read More >",
+        "supTitle": "Featured Post"
+    },
+    "posts": {
+        "title": "My Posts",
+        "controls": {
+            "prev": "< Prev",
+            "next": "Next >"
+        }
+    }
+}

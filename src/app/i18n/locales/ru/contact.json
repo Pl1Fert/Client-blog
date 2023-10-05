@@ -1,0 +1,30 @@
+{
+    "top": {
+        "supTitle": "Связаться с нами",
+        "title": "Давайте начнем разговор",
+        "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim."
+    },
+    "header": {
+        "block_1": {
+            "title": "Рабочее время",
+            "days": "С понедельника по пятницу",
+            "time": "с 9:00 утра до 8:00 вечера",
+            "text": "Наша служба поддержки доступна 24/7"
+        },
+        "block_2": {
+            "title": "Связаться с нами"
+        }
+    },
+    "form": {
+        "name": "Ваше Имя",
+        "email": "Ваше Email",
+        "query": "Критерий",
+        "message": "Письмо",
+        "button": "Отправить Письмо",
+        "queries": {
+            "Problem": "Проблема",
+            "Collaboration": "Сотрудничество",
+            "Career": "Карьера"
+        }
+    }
+}

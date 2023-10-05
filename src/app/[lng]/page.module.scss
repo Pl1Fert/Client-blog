@@ -1,0 +1,439 @@
+@import "@/styles/colors";
+
+.top {
+    position: relative;
+
+    height: 720px;
+    margin-bottom: 64px;
+
+    &Background {
+        position: absolute;
+        inset: 0;
+
+        width: 100%;
+        height: 100%;
+
+        background-color: $dark-blue;
+        opacity: 0.3;
+
+        z-index: 2;
+    }
+
+    &Inner {
+        position: relative;
+        padding: 128px 0 0 80px;
+        max-width: 800px;
+
+        color: $white;
+
+        z-index: 3;
+
+        @media screen and (max-width: 575px) {
+            padding: 128px 40px 0;
+        }
+
+        @media screen and (max-width: 475px) {
+            padding: 128px 20px 0;
+        }
+    }
+
+    &Image {
+        position: absolute;
+        inset: 0;
+
+        width: 100%;
+        height: 100%;
+
+        z-index: 1;
+    }
+
+    &SupTitle {
+        margin-bottom: 24px;
+
+        font-weight: 500;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+
+        span {
+            font-weight: 700;
+        }
+    }
+
+    &Title {
+        margin-bottom: 24px;
+
+        font-size: 56px;
+
+        @media screen and (max-width: 650px) {
+            font-size: 48px;
+        }
+
+        @media screen and (max-width: 575px) {
+            font-size: 36px;
+        }
+    }
+
+    &Text {
+        margin-bottom: 16px;
+
+        span {
+            color: $yellow;
+        }
+
+        &:last-child {
+            margin-bottom: 48px;
+        }
+    }
+}
+
+.posts {
+    padding: 64px 0 128px;
+
+    display: flex;
+    align-items: flex-start;
+
+    &Title {
+        margin-bottom: 32px;
+    }
+
+    @media screen and (max-width: 1150px) {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.featuredPost {
+    &Content {
+        padding: 32px;
+        border: 1px solid $light-grey;
+        margin-right: 32px;
+
+        @media screen and (max-width: 1150px) {
+            margin-right: 0;
+        }
+
+        @media screen and (max-width: 800px) {
+            border: none;
+        }
+    }
+
+    &Author {
+        max-width: 670px;
+        margin: 32px 0 16px;
+    }
+
+    &Title {
+        max-width: 670px;
+        margin-bottom: 16px;
+    }
+
+    &Text {
+        max-width: 570px;
+        margin-bottom: 32px;
+    }
+
+    &Image {
+        @media screen and (max-width: 800px) {
+            width: 100%;
+            aspect-ratio: 16/9;
+        }
+    }
+
+    @media screen and (max-width: 1150px) {
+        margin-bottom: 30px;
+    }
+}
+
+.allPosts {
+    &Header {
+        margin-bottom: 32px;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &Link {
+        color: $purple;
+
+        font-weight: 500;
+
+        cursor: pointer;
+
+        transition: all 0.3s linear;
+
+        &::after {
+            content: "";
+            display: block;
+            width: 0;
+            height: 2px;
+
+            background: $purple;
+            transition: all 0.3s linear;
+        }
+
+        &:hover::after {
+            width: 100%;
+        }
+    }
+
+    &Column {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.post {
+    padding: 25px 150px 25px 30px;
+
+    @media screen and (max-width: 1300px) {
+        padding-right: 50px;
+    }
+
+    @media screen and (max-width: 1150px) {
+        padding-right: 0;
+    }
+
+    transition: all 0.3s linear;
+
+    &:hover {
+        background-color: $milk;
+    }
+
+    &Author {
+        margin-bottom: 8px;
+    }
+}
+
+.logos {
+    padding: 32px 0 96px;
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    &Title {
+        margin-right: 85px;
+
+        color: $light-grey;
+
+        @media screen and (max-width: 1350px) {
+            margin-bottom: 15px;
+        }
+
+        @media screen and (max-width: 475px) {
+            margin-right: 40px;
+        }
+    }
+
+    &Item {
+        margin-right: 75px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        @media screen and (max-width: 1350px) {
+            margin-bottom: 15px;
+        }
+
+        @media screen and (max-width: 475px) {
+            margin-right: 40px;
+
+            &:last-child {
+                margin-right: 40px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 1350px) {
+        justify-content: space-around;
+    }
+}
+
+.blocks {
+    margin-top: 64px;
+    height: 25px;
+
+    display: flex;
+
+    @media screen and (max-width: 1150px) {
+        margin-top: 0;
+    }
+}
+
+.whiteBlock {
+    width: 20%;
+
+    background-color: $white;
+}
+
+.yellowBlock {
+    width: 50%;
+
+    background-color: $yellow;
+}
+
+.purpleBlock {
+    width: 30%;
+
+    background-color: $purple;
+}
+
+.about {
+    padding: 96px;
+    margin-bottom: 64px;
+
+    background-color: $very-light-purple;
+
+    @media screen and (max-width: 550px) {
+        padding: 94px 40px;
+    }
+
+    &Row {
+        margin-bottom: 20px;
+
+        display: flex;
+        align-items: flex-start;
+
+        @media screen and (max-width: 1100px) {
+            flex-direction: column;
+            gap: 30px;
+        }
+    }
+
+    &Block {
+        max-width: 516px;
+        margin-right: 30px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        @media screen and (max-width: 550px) {
+            margin-right: 0;
+        }
+    }
+
+    &SupTitle {
+        margin-bottom: 24px;
+
+        font-weight: 500;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+
+    &Title {
+        margin-bottom: 16px;
+    }
+
+    &Text {
+        color: $dark-grey;
+    }
+
+    &Link {
+        color: $purple;
+
+        font-weight: 500;
+
+        cursor: pointer;
+
+        transition: all 0.3s linear;
+
+        &::after {
+            content: "";
+            display: block;
+            width: 0;
+            height: 2px;
+
+            background: $purple;
+            transition: all 0.3s linear;
+        }
+
+        &:hover::after {
+            width: 8%;
+        }
+    }
+}
+
+.whyWeStarted {
+    position: relative;
+
+    padding: 64px 0;
+
+    &Content {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+
+        padding: 80px;
+        max-width: 730px;
+
+        background-color: $white;
+
+        z-index: 2;
+
+        @media screen and (max-width: 850px) {
+            position: static;
+        }
+
+        @media screen and (max-width: 575px) {
+            padding: 80px 0;
+        }
+    }
+
+    &SupTitle {
+        margin-bottom: 24px;
+
+        font-weight: 500;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+
+    &Title {
+        margin-bottom: 16px;
+    }
+
+    &Text {
+        margin-bottom: 30px;
+
+        color: $dark-grey;
+    }
+
+    &Image {
+        @media screen and (max-width: 1000px) {
+            width: 100%;
+        }
+
+        @media screen and (max-width: 850px) {
+            aspect-ratio: 16/9;
+        }
+
+        @media screen and (max-width: 575px) {
+            object-fit: contain;
+            aspect-ratio: 4/3;
+            height: 100%;
+        }
+    }
+}
+
+.categories {
+    padding: 64px 0;
+
+    &Title {
+        margin-bottom: 48px;
+
+        text-align: center;
+    }
+
+    &Row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        @media screen and (max-width: 1350px) {
+            justify-content: space-around;
+        }
+    }
+}

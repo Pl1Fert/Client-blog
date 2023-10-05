@@ -1,0 +1,70 @@
+@import "@/styles/colors";
+
+.select {
+    width: 100%;
+    padding: 15px 20px;
+
+    font: inherit;
+    font-size: 18px;
+
+    outline: none;
+    resize: none;
+    appearance: none;
+
+    background: url("../../assets/icons/arrow-down.svg") no-repeat right;
+    background-position-x: calc(100% - 8px);
+
+    &::placeholder {
+        font: inherit;
+        font-size: 18px;
+
+        @media screen and (max-width: 575px) {
+            font-size: 16px;
+        }
+    }
+
+    &Dark {
+        border: 1px solid $dark-grey;
+
+        color: $white;
+        background-color: transparent;
+
+        &::placeholder {
+            color: $light-grey;
+        }
+    }
+
+    &Light {
+        border: 1px solid $dark-blue;
+
+        color: $dark-blue;
+        background-color: transparent;
+
+        &::placeholder {
+            color: $dark-grey;
+        }
+    }
+
+    &HalfWidth {
+        width: 50%;
+        @media screen and (max-width: 575px) {
+            width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 575px) {
+        font-size: 16px;
+    }
+}
+
+.error {
+    margin-top: 2px;
+
+    font-size: 12px;
+
+    color: $red;
+}
+
+.container {
+    width: 100%;
+}

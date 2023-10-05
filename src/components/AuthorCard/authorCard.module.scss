@@ -1,0 +1,42 @@
+@import "@/styles/colors";
+
+.card {
+    width: 296px;
+    height: 324px;
+    padding: 40px 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: $very-light-grey;
+
+    cursor: pointer;
+    transition: all 0.3s linear;
+
+    &:hover {
+        background-color: $milk;
+    }
+}
+
+.socials {
+    a {
+        margin-right: 15px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.imageWrapper {
+    margin-bottom: 20px;
+}
+
+.role {
+    margin-bottom: 20px;
+
+    font-size: 14px;
+
+    color: $dark-grey;
+}
