@@ -6,9 +6,8 @@ import { Sen } from "next/font/google";
 import { languages } from "@/app/i18n/settings";
 import { Footer, Header } from "@/components";
 
-import "@/styles/display.scss";
-import "@/styles/globals.css";
 import "@/styles/mapBox.scss";
+import "@/styles/globals.css";
 
 const sen = Sen({ subsets: ["latin"], weight: ["400", "500", "700"] });
 export const generateStaticParams = () => languages.map((lng) => ({ lng }));

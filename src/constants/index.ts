@@ -1,6 +1,7 @@
 /* eslint-disable simple-import-sort/exports */
 export * from "./appRoutes";
 export * from "./socials";
+export * from "./authorLinks";
 export * from "./authors";
 export * from "./categories";
 export * from "./citiesCoordinates";

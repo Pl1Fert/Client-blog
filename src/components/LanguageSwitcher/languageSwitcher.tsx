@@ -16,11 +16,11 @@ export const LanguageSwitcher: FC<LanguageSwitcherProps> = ({ lng }) => {
     return (
         <>
             {languages
-                .filter((l) => lng !== l)
-                .map((l, index) => (
-                    <span key={l} className={styles.switcher}>
+                .filter((lang) => lng !== lang)
+                .map((lang, index) => (
+                    <span key={lang} className={styles.switcher}>
                         {index > 0 && " or "}
-                        <Link href={`/${l}/${pathname}`}>{l}</Link>
+                        <Link href={`/${lang}/${pathname}`}>{lang}</Link>
                     </span>
                 ))}
         </>

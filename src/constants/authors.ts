@@ -6,58 +6,7 @@ import AuthorImage_1 from "@/assets/images/authors/man-in-yellow.svg";
 import AuthorImage_5 from "@/assets/images/authors/man-in-yellow-button-up-shirt-wearing-black-framed-eyeglasses.svg";
 import AuthorImage_2 from "@/assets/images/authors/woman-in-white.svg";
 import AuthorImage_6 from "@/assets/images/authors/woman-in-white-and-black-striped-shirt-wearing-black-sunglasses.svg";
-import { BLOG_SOCIAL_LINKS } from "@/constants";
-
-const AUTHORS_LINKS = [
-    [
-        "https://www.facebook.com/1",
-        "https://twitter.com/1",
-        "https://www.instagram.com/1",
-        "https://www.linkedin.com/1",
-    ],
-    [
-        "https://www.facebook.com/2",
-        "https://twitter.com/2",
-        "https://www.instagram.com/2",
-        "https://www.linkedin.com/2",
-    ],
-    [
-        "https://www.facebook.com/3",
-        "https://twitter.com/3",
-        "https://www.instagram.com/3",
-        "https://www.linkedin.com/3",
-    ],
-    [
-        "https://www.facebook.com/4",
-        "https://twitter.com/4",
-        "https://www.instagram.com/4",
-        "https://www.linkedin.com/4",
-    ],
-    [
-        "https://www.facebook.com/5",
-        "https://twitter.com/5",
-        "https://www.instagram.com/5",
-        "https://www.linkedin.com/5",
-    ],
-    [
-        "https://www.facebook.com/6",
-        "https://twitter.com/6",
-        "https://www.instagram.com/6",
-        "https://www.linkedin.com/6",
-    ],
-    [
-        "https://www.facebook.com/7",
-        "https://twitter.com/7",
-        "https://www.instagram.com/7",
-        "https://www.linkedin.com/7",
-    ],
-    [
-        "https://www.facebook.com/8",
-        "https://twitter.com/8",
-        "https://www.instagram.com/8",
-        "https://www.linkedin.com/8",
-    ],
-];
+import { AUTHORS_LINKS, BLOG_SOCIAL_LINKS } from "@/constants";
 
 export const AUTHORS = [
     {

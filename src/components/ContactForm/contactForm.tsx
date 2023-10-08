@@ -9,23 +9,10 @@ import { ENV_VARS, MAIL_QUERIES } from "@/constants";
 import { Button, Input, Select, TextArea } from "@/UI";
 import { contactFormSchema } from "@/validators";
 
+import { initialErrors, initialState } from "./contactForm.config";
 import { FormErrorsState, FormProps, FormState } from "./contactForm.interfaces";
 
 import styles from "./contactForm.module.scss";
-
-const initialState: FormState = {
-    name: "",
-    email: "",
-    query: "",
-    message: "",
-};
-
-const initialErrors: FormErrorsState = {
-    name: false,
-    email: false,
-    query: false,
-    message: false,
-};
 
 export const ContactForm: FC<FormProps> = ({ lng }) => {
     const [formData, setFormData] = useState<FormState>(initialState);

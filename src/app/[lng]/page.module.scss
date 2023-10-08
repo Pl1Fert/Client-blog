@@ -28,12 +28,8 @@
 
         z-index: 3;
 
-        @media screen and (max-width: 575px) {
-            padding: 128px 40px 0;
-        }
-
         @media screen and (max-width: 475px) {
-            padding: 128px 20px 0;
+            padding: 64px 20px 128px;
         }
     }
 
@@ -83,6 +79,10 @@
         &:last-child {
             margin-bottom: 48px;
         }
+    }
+
+    @media screen and (max-width: 575px) {
+        height: 500px;
     }
 }
 
@@ -237,6 +237,12 @@
             margin-bottom: 15px;
         }
 
+        @media screen and (max-width: 730px) {
+            &:last-child {
+                margin-right: 75px;
+            }
+        }
+
         @media screen and (max-width: 475px) {
             margin-right: 40px;
 
@@ -375,6 +381,7 @@
 
         @media screen and (max-width: 850px) {
             position: static;
+            padding-bottom: 0;
         }
 
         @media screen and (max-width: 575px) {

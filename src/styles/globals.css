@@ -1,3 +1,34 @@
+body,
+div,
+section,
+article,
+main,
+html,
+a,
+li,
+span,
+input,
+button,
+textarea,
+select,
+form,
+ul,
+img,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+footer {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
 body {
     min-height: 100vh;
 
