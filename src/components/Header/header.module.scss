@@ -1,7 +1,12 @@
 @import "@/styles/colors";
 
 .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+
     height: 80px;
+    width: 100%;
     padding: 0 30px 0 40px;
 
     display: flex;
@@ -9,4 +14,6 @@
 
     background-color: $dark-blue;
     color: $white;
+
+    z-index: 20;
 }
