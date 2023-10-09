@@ -165,6 +165,10 @@
         padding: 64px 40px 64px;
     }
 
+    @media screen and (max-width: 450px) {
+        padding: 64px 10px;
+    }
+
     &Row {
         display: flex;
         align-items: center;

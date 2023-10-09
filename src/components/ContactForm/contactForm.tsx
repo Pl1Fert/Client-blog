@@ -1,6 +1,6 @@
 "use client";
 
-import { FC, SyntheticEvent, useEffect, useState } from "react";
+import { FC, SyntheticEvent, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { ValidationError } from "yup";
 
@@ -19,8 +19,30 @@ export const ContactForm: FC<FormProps> = ({ lng }) => {
     const [errors, setErrors] = useState<FormErrorsState>(initialErrors);
     const { t } = useTranslation(lng, "contact");
 
+    const validate = (field: string, value: string) => {
+        const data = { ...formData, [field]: value };
+
+        contactFormSchema
+            .validate(data, { abortEarly: false })
+            .then(() => {
+                setErrors({ ...initialErrors });
+            })
+            .catch((err) => {
+                const error = err as ValidationError;
+                const errors = error.inner.filter((e) => e.path === field);
+
+                if (errors.length > 0) {
+                    setErrors((prevErrors) => ({ ...prevErrors, [field]: true }));
+                } else {
+                    setErrors((prevErrors) => ({ ...prevErrors, [field]: false }));
+                }
+            });
+    };
+
     const onChangeHandler = (e: SyntheticEvent): void => {
         const { name, value } = e.target as HTMLInputElement;
+
+        validate(name, value);
 
         setFormData((prev) => ({ ...prev, [name]: value }));
     };
@@ -65,28 +87,6 @@ export const ContactForm: FC<FormProps> = ({ lng }) => {
             });
         }
     };
-
-    useEffect(() => {
-        if (formData.email || formData.name || formData.message || formData.query) {
-            contactFormSchema
-                .validate(formData, { abortEarly: false })
-                .then(() => {
-                    setErrors({ ...initialErrors });
-                })
-                .catch((err) => {
-                    const error = err as ValidationError;
-                    const errors = error.inner.reduce(
-                        (acc, error) => ({
-                            ...acc,
-                            [error.path!]: true,
-                        }),
-                        {}
-                    );
-
-                    setErrors({ ...initialErrors, ...errors });
-                });
-        }
-    }, [formData]);
 
     return (
         <form className={styles.form}>

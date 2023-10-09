@@ -18,7 +18,7 @@
 
         z-index: 2;
 
-        @media screen and (max-width: 350px) {
+        @media screen and (max-width: 450px) {
             display: none;
         }
     }
@@ -36,8 +36,8 @@
             padding: 64px 20px 128px;
         }
 
-        @media screen and (max-width: 350px) {
-            padding-top: 310px;
+        @media screen and (max-width: 450px) {
+            padding-top: 60%;
             padding-bottom: 10px;
             color: $dark-blue;
         }
@@ -52,8 +52,9 @@
 
         z-index: 1;
 
-        @media screen and (max-width: 350px) {
-            height: 300px;
+        @media screen and (max-width: 450px) {
+            object-fit: contain;
+            height: auto;
         }
     }
 
@@ -81,6 +82,15 @@
         @media screen and (max-width: 575px) {
             font-size: 36px;
         }
+
+        @media screen and (max-width: 450px) {
+            font-size: 30px;
+            line-height: 30px;
+        }
+
+        @media screen and (max-width: 350px) {
+            font-size: 25px;
+        }
     }
 
     &Text {
@@ -95,11 +105,15 @@
         }
     }
 
+    @media screen and (max-width: 650px) {
+        height: 550px;
+    }
+
     @media screen and (max-width: 575px) {
         height: 500px;
     }
 
-    @media screen and (max-width: 350px) {
+    @media screen and (max-width: 450px) {
         height: auto;
     }
 }
@@ -133,6 +147,10 @@
         @media screen and (max-width: 800px) {
             border: none;
         }
+
+        @media screen and (max-width: 450px) {
+            padding: 32px 0;
+        }
     }
 
     &Author {
@@ -157,11 +175,8 @@
         }
 
         @media screen and (max-width: 450px) {
-            height: 300px;
-        }
-
-        @media screen and (max-width: 350px) {
-            height: 240px;
+            height: auto;
+            object-fit: contain;
         }
     }
 
@@ -218,6 +233,10 @@
 
     @media screen and (max-width: 1150px) {
         padding-right: 0;
+    }
+
+    @media screen and (max-width: 450px) {
+        padding-left: 0;
     }
 
     transition: all 0.3s linear;
@@ -320,6 +339,10 @@
 
     @media screen and (max-width: 550px) {
         padding: 94px 40px;
+    }
+
+    @media screen and (max-width: 450px) {
+        padding: 94px 0;
     }
 
     &Row {
