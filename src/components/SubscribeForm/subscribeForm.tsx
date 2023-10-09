@@ -18,9 +18,22 @@ export const SubscribeForm: FC<FormProps> = ({ lng }) => {
     const { t } = useTranslation(lng, "footer");
 
     const onChangeHandler = (e: SyntheticEvent): void => {
-        const target = e.target as HTMLInputElement;
+        const { value } = e.target as HTMLInputElement;
 
-        setValue(target.value);
+        const data = {
+            email: value,
+        };
+
+        subscribeFormSchema
+            .validate(data, { abortEarly: false })
+            .then(() => {
+                setHasError(false);
+            })
+            .catch(() => {
+                setHasError(true);
+            });
+
+        setValue(value);
     };
 
     const sendEmail = async (): Promise<void> => {

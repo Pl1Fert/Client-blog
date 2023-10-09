@@ -1,6 +1,6 @@
 "use client";
 
-import { FC, SyntheticEvent, useState } from "react";
+import { FC, SyntheticEvent, useEffect, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { ValidationError } from "yup";
 
@@ -65,6 +65,28 @@ export const ContactForm: FC<FormProps> = ({ lng }) => {
             });
         }
     };
+
+    useEffect(() => {
+        if (formData.email || formData.name || formData.message || formData.query) {
+            contactFormSchema
+                .validate(formData, { abortEarly: false })
+                .then(() => {
+                    setErrors({ ...initialErrors });
+                })
+                .catch((err) => {
+                    const error = err as ValidationError;
+                    const errors = error.inner.reduce(
+                        (acc, error) => ({
+                            ...acc,
+                            [error.path!]: true,
+                        }),
+                        {}
+                    );
+
+                    setErrors({ ...initialErrors, ...errors });
+                });
+        }
+    }, [formData]);
 
     return (
         <form className={styles.form}>
