@@ -16,7 +16,11 @@ export const MapComponent: FC = () => {
                 mapboxAccessToken={mapBoxToken}
                 mapStyle="mapbox://styles/mapbox/streets-v11"
                 maxZoom={20}
-                minZoom={3}>
+                minZoom={3}
+                initialViewState={{
+                    longitude: 4.3525,
+                    latitude: 50.8467,
+                }}>
                 {CITIES_COORDINATES.map(({ id, lat, lng }) => (
                     <Marker key={id} latitude={lat} longitude={lng} anchor="bottom" />
                 ))}
